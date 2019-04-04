@@ -14,6 +14,10 @@ nginx_worker_connections: 1024
 nginx_gzip: True
 nginx_gzip_comp_level: 3
 nginx_server_names_hash_bucket_size: 64
+nginx_restrict: False
+nginx_restrict_allow: []
+nginx_restrict_pass: []
+
 
 root: /usr/share/nginx/html
 

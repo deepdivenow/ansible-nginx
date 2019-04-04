@@ -46,7 +46,9 @@ http {
     keepalive_timeout  65;
 
     index   index.html index.htm;
-
+{% if nginx_restrict %}
+    include /etc/nginx/htpasswd.conf;
+{% endif %}
     include /etc/nginx/conf.d/*.conf;
 
 }
